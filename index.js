@@ -1,6 +1,7 @@
 import express from "express";
 import connectDb from "./db/connectDb.js";
-import { allDoc } from "./controllers/readData.js";
+import { findById } from "./controllers/findById.js";
+// import { allDoc } from "./controllers/readData.js";
 // import { createManyDoc } from "./controllers/insertManyData.js";
 // import {createDoc} from "./controllers/insertData.js";
 // import movieModel from "./models/Movies.js";
@@ -11,10 +12,11 @@ const uri = process.env.DATABASE_URL || 'mongodb+srv://tmr908776:tmr908776@clust
 
 
 connectDb(uri);
-allDoc()
+// allDoc()
 // movieModel()
 // createDoc();
 // createManyDoc();
+findById();
 
 app.listen(port, () => {
     console.log(`Server listening on PORT ${port}`);
