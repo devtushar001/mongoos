@@ -1,6 +1,6 @@
 import express from "express";
 import connectDb from "./db/connectDb.js";
-import findeMethod from "./controllers/find.js";
+// import findeMethod from "./controllers/find.js";
 // import { findById } from "./controllers/findById.js";
 // import { allDoc } from "./controllers/readData.js";
 // import { createManyDoc } from "./controllers/insertManyData.js";
@@ -18,7 +18,7 @@ connectDb(uri);
 // createDoc();
 // createManyDoc();
 // findById();
-findeMethod();
+// findeMethod();
 
 app.listen(port, () => {
     console.log(`Server listening on PORT ${port}`);
